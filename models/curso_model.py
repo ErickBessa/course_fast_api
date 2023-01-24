@@ -8,5 +8,5 @@ class CursoModel(settings.DBBaseModel):
 
     id: int = Column(Integer, primary_key=True, autoincrement=True)
     titulo: str = Column(String(100))
-    aula: int = Column(Integer)
+    aulas: int = Column(Integer)
     horas: int = Column(Integer)

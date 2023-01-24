@@ -12,7 +12,7 @@ from sqlalchemy.future import select
 
 from models.curso_model import CursoModel
 from schemas.curso_schema import CursoSchema
-from core.deps  import get_session
+from core.deps import get_session
 
 router = APIRouter()
 
@@ -25,7 +25,7 @@ async def post_curso(curso: CursoSchema, db: AsyncSession = Depends(get_session)
     return novo_curso
 
 @router.get('/', response_model=List[CursoSchema])
-async def get_cursos(db = Depends(get_session())):
+async def get_cursos(db: AsyncSession = Depends(get_session)):
     async with db as session:
         query = select(CursoModel)
         print(f'POST_query: {query}')
