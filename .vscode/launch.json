@@ -8,8 +8,15 @@
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
-            "program": "/home/erick/projetos/famp/secao04/venv/bin/python",
-            "console": "integratedTerminal"
+            "module": "uvicorn",
+            "python": "/home/erick/projetos/course_fast_api/venv/bin/python",
+            "args": [
+                "main:app",
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "8000"
+            ]
         }
     ]
 }
