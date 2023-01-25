@@ -9,7 +9,7 @@
             "type": "python",
             "request": "launch",
             "module": "uvicorn",
-            "python": "/home/erick/projetos/course_fast_api/venv/bin/python",
+            "python": "${workspaceFolder}/venv/bin/python",
             "args": [
                 "main:app",
                 "--host",
