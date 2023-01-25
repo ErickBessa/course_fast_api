@@ -1,5 +1,7 @@
 # Curso sobre fastApi - Python
 Este repositório foi criado para guardar os códigos do curso da [fastapi-apis-modernas-e-assincronas-com-python](https://www.udemy.com/course/fastapi-apis-modernas-e-assincronas-com-python/).
+- Seção 4: [CRUD FastAPI e SQL Alchemy](https://github.com/ErickBessa/course_fast_api/tree/main/crud-sql-alchemy).
+- Seção 5: [CRUD FastAPI e SQL Model](https://github.com/ErickBessa/course_fast_api/tree/main/crud-sql-model).
 
 ## Objetivo
 Esse curso vai me fornecer uma visão geral de como usar a fastapi conectada a um banco de dados. 
