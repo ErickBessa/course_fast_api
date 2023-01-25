@@ -16,6 +16,7 @@ Pretendo ir comitando nesse repositório, conforme for avançando no curso.
 ## Instalação
 - No terminal execute `python3.8 -m venv venv` para criar sua venv.
 - Execute o comando `source venv/bin/activate` para ativar a venv.
+- Execute o comando `pip install --upgrade pip` para atualizar o pip.
 - Execute o comando `pip install -r requirements.txt` para instalar todas as dependências do projeto.
 
 ## Ambiente de desenvolvimento
