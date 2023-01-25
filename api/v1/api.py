@@ -5,4 +5,4 @@ from api.v1.endpoints import curso
 api_router = APIRouter()
 
 # /api/v1/cursos
-api_router.include_router(curso.router, prefix='/cursos', tags=["cursos"])
+api_router.include_router(curso.router, prefix='/cursos', tags=["Cursos"])
