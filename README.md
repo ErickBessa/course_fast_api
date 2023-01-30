@@ -9,7 +9,7 @@ Pretendo ir comitando nesse repositório, conforme for avançando no curso.
 
 ## Informações relevantes
 - Esse curso está sendo realizado no linux.
-- Usei o postgresql rodando em container.
+- Usei o postgresql rodando em container, seguindo [esse](https://hevodata.com/learn/docker-postgresql/) turorial.
 
 ## Requisitos
 - python v3.8
