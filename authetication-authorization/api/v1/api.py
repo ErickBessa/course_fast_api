@@ -4,7 +4,7 @@ from api.v1.endpoints import artigo
 from api.v1.endpoints import usuario
 
 
-api_router = APIRouter
+api_router = APIRouter()
 
-api_router.include_router(artigo.router, prefix='/artigos', tag=['Artigos'])
-api_router.include_router(usuario.router, prefix='/usuarios', tag=['Usuarios'])
+api_router.include_router(artigo.router, prefix='/artigos', tags=['Artigos'])
+api_router.include_router(usuario.router, prefix='/usuarios', tags=['Usuarios'])
