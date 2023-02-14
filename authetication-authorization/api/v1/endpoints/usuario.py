@@ -73,7 +73,7 @@ async def get_usuario(usuario_id: int, db: AsyncSession = Depends(get_session)):
 @router.put('/{usuario_id}', response_model=UsuarioSchemaBase, status_code=status.HTTP_202_ACCEPTED)
 async def put_usuario(usuario_id: int, usuario: UsuarioSchemaUp, db: AsyncSession = Depends(get_session)):
     async with db as session:
-        query = select(UsuarioModel).filer(UsuarioModel.id == usuario_id)
+        query = select(UsuarioModel).filter(UsuarioModel.id == usuario_id)
         result = await session.execute(query)
         usuario_up: UsuarioSchemaBase = result.scalars().unique().one_or_none()
         
@@ -100,7 +100,7 @@ async def put_usuario(usuario_id: int, usuario: UsuarioSchemaUp, db: AsyncSessio
 @router.delete('/{usuario_id}', status_code=status.HTTP_204_NO_CONTENT)
 async def delete_usuario(usuario_id: int, db: AsyncSession = Depends(get_session)):
     async with db as session:
-        query = select(UsuarioModel).filer(UsuarioModel.id == usuario_id)
+        query = select(UsuarioModel).filter(UsuarioModel.id == usuario_id)
         result = await session.execute(query)
         usuario_del: UsuarioSchemaArtigos = result.scalars().unique().one_or_none()
         if usuario_del:
