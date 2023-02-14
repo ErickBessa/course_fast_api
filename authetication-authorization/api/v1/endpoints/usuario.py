@@ -59,7 +59,7 @@ async def get_usuarios(db: AsyncSession = Depends(get_session)):
 @router.get('/{usuario_id}', response_model=UsuarioSchemaArtigos, status_code=status.HTTP_200_OK)
 async def get_usuario(usuario_id: int, db: AsyncSession = Depends(get_session)):
     async with db as session:
-        query = select(UsuarioModel).filer(UsuarioModel.id == usuario_id)
+        query = select(UsuarioModel).filter(UsuarioModel.id == usuario_id)
         result = await session.execute(query)
         usuario: UsuarioSchemaArtigos = result.scalars().unique().one_or_none()
         if usuario:
