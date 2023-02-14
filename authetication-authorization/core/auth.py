@@ -38,7 +38,7 @@ async def autenticar(email:EmailStr, senha:str, db: AsyncSession) -> Optional[Us
 
 def _criar_token(tipo_token: str, tempo_vida: timedelta, sub: str) -> str:
     # https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.3
-    sp = timezone('Ameria/Sao_Paulo')
+    sp = timezone('America/Sao_Paulo')
     expira = datetime.now(tz=sp) + tempo_vida
 
     payload = {}
