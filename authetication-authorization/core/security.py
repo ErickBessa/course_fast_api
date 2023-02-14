@@ -1,6 +1,6 @@
 from passlib.context import CryptContext
 
-CRIPTO = CryptContext(schemes=['bcrypt'], deprecated='auto')
+CRIPTO = CryptContext(schemes=['md5_crypt'], deprecated='auto')
 
 
 def verificar_senha(senha: str, hash_senha: str) -> bool:
