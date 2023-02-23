@@ -33,4 +33,4 @@ class UsuarioSchemaUp(UsuarioSchemaBase):
     sobrenome: Optional[str]
     email: Optional[EmailStr]
     senha: Optional[str]
-    eh_admin: Optional[Boolean]
+    eh_admin: Optional[bool]
